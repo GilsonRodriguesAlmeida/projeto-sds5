@@ -9,9 +9,9 @@ type ChartData = {
     series: number[];
 }
 
-const DonuChart = () => {
+const DonutChart = () => {
 
-    const [chartData, setChartData] = useState<ChartData>({ labels: [], series: [] });
+    const [chartData, setChartData] = useState<ChartData>({ labels: [], series: []});
 
     useEffect(() => {
         axios.get(`${BASE_URL}/sales/amount-by-seller`)
@@ -40,4 +40,4 @@ const DonuChart = () => {
     );
 }
 
-export default DonuChart;
+export default DonutChart;

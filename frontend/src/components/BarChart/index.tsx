@@ -40,12 +40,12 @@ const BarChart = () => {
 
                 setChartData({
                     labels: {
-                        categories: []
+                        categories: myLabels
                     },
                     series: [
                         {
                             name: "% Success",
-                            data: []
+                            data: mySeries
                         }
                     ]
                 });
